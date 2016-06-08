@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <definitions 
+ xmlns="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ServiciosCitasCompService" targetNamespace="http://comparendos.servicios/" xmlns:tns="http://comparendos.servicios/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:fi="http://java.sun.com/xml/ns/wsit/2006/09/policy/fastinfoset/service" xmlns:tcp="http://java.sun.com/xml/ns/wsit/2006/09/policy/soaptcp/service" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:sp="http://docs.oasis-open.org/ws-sx/ws-securitypolicy/200702" xmlns:sc="http://schemas.sun.com/2006/03/wss/server" xmlns:wspp="http://java.sun.com/xml/ns/wsit/policy" 
+ >
+    <message name="crearObjetos"/>
+    <message name="crearObjetosResponse"/>
+    <message name="buscarTramitePorDependencia"/>
+    <message name="buscarTramitePorDependenciaResponse"/>
+    <message name="insertarTramiteDependencia"/>
+    <message name="insertarTramiteDependenciaResponse"/>
+    <message name="eliminarTramiteDependencia"/>
+    <message name="eliminarTramiteDependenciaResponse"/>
+    <message name="insertarCita"/>
+    <message name="insertarCitaResponse"/>
+    <message name="terminarCita"/>
+    <message name="terminarCitaResponse"/>
+    <message name="anularCita"/>
+    <message name="anularCitaResponse"/>
+    <message name="buscarCita"/>
+    <message name="buscarCitaResponse"/>
+    <message name="ponerObservacionCita"/>
+    <message name="ponerObservacionCitaResponse"/>
+    <message name="insertarDetCita"/>
+    <message name="insertarDetCitaResponse"/>
+    <message name="buscarDetCita"/>
+    <message name="buscarDetCitaResponse"/>
+    <message name="eliminarDetCita"/>
+    <message name="eliminarDetCitaResponse"/>
+    <portType name="ServiciosCitasComp">
+        <operation name="crearObjetos">
+            <input message="tns:crearObjetos"/>
+            <output message="tns:crearObjetosResponse"/>
+        </operation>
+        <operation name="buscarTramitePorDependencia">
+            <input message="tns:buscarTramitePorDependencia"/>
+            <output message="tns:buscarTramitePorDependenciaResponse"/>
+        </operation>
+        <operation name="insertarTramiteDependencia">
+            <input message="tns:insertarTramiteDependencia"/>
+            <output message="tns:insertarTramiteDependenciaResponse"/>
+        </operation>
+        <operation name="eliminarTramiteDependencia">
+            <input message="tns:eliminarTramiteDependencia"/>
+            <output message="tns:eliminarTramiteDependenciaResponse"/>
+        </operation>
+        <operation name="insertarCita">
+            <input message="tns:insertarCita"/>
+            <output message="tns:insertarCitaResponse"/>
+        </operation>
+        <operation name="terminarCita">
+            <input message="tns:terminarCita"/>
+            <output message="tns:terminarCitaResponse"/>
+        </operation>
+        <operation name="anularCita">
+            <input message="tns:anularCita"/>
+            <output message="tns:anularCitaResponse"/>
+        </operation>
+        <operation name="buscarCita">
+            <input message="tns:buscarCita"/>
+            <output message="tns:buscarCitaResponse"/>
+        </operation>
+        <operation name="ponerObservacionCita">
+            <input message="tns:ponerObservacionCita"/>
+            <output message="tns:ponerObservacionCitaResponse"/>
+        </operation>
+        <operation name="insertarDetCita">
+            <input message="tns:insertarDetCita"/>
+            <output message="tns:insertarDetCitaResponse"/>
+        </operation>
+        <operation name="buscarDetCita">
+            <input message="tns:buscarDetCita"/>
+            <output message="tns:buscarDetCitaResponse"/>
+        </operation>
+        <operation name="eliminarDetCita">
+            <input message="tns:eliminarDetCita"/>
+            <output message="tns:eliminarDetCitaResponse"/>
+        </operation>
+    </portType>
+    <binding name="ServiciosCitasCompPortBinding" type="tns:ServiciosCitasComp">
+        <operation name="crearObjetos">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="buscarTramitePorDependencia">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="insertarTramiteDependencia">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="eliminarTramiteDependencia">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="insertarCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="terminarCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="anularCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="buscarCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="ponerObservacionCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="insertarDetCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="buscarDetCita">
+            <input></input>
+            <output></output>
+        </operation>
+        <operation name="eliminarDetCita">
+            <input></input>
+            <output></output>
+        </operation>
+    </binding>
+    <service name="ServiciosCitasCompService">
+        <port name="ServiciosCitasCompPort" binding="tns:ServiciosCitasCompPortBinding"/>
+    </service>
+</definitions>

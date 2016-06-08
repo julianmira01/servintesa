@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Factura"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="612"
+		 pageHeight="792"
+		 columnWidth="552"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="AllSectionsNoDetail"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="SUBREPORT_DIR" isForPrompting="true" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["D:\\desarrollo\\JSF\\secretaria\\src\\reportes\\facturaVehiculo\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="SUBREP_DETALLE" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="LF_ID" isForPrompting="false" class="java.lang.Integer"/>
+	<parameter name="SUBREP_PROPIETARIO" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="PAGUESE_HASTA" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="SUBREP_SECRETARIA" isForPrompting="false" class="net.sf.jasperreports.engine.JasperReport"/>
+	<parameter name="RUTA_IMG" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="PREF_CODBAR" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="LABL_CODBAR" isForPrompting="false" class="java.lang.String"/>
+	<queryString><![CDATA[SELECT * FROM proc_info_factura($P{LF_ID})]]></queryString>
+
+	<field name="LF_ID" class="java.lang.Integer"/>
+	<field name="LF_NUMERO" class="java.lang.String"/>
+	<field name="LF_TOTAL" class="java.lang.Double"/>
+	<field name="LF_FECHA" class="java.sql.Timestamp"/>
+	<field name="PLACA" class="java.lang.String"/>
+	<field name="MODELO" class="java.lang.String"/>
+	<field name="LF_V_ID" class="java.lang.Integer"/>
+	<field name="CLASE" class="java.lang.String"/>
+	<field name="MARCA" class="java.lang.String"/>
+	<field name="LINEA" class="java.lang.String"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="123"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="74"
+						y="92"
+						width="59"
+						height="15"
+						key="staticText-1"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Recibo Num:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="5"
+						y="108"
+						width="131"
+						height="12"
+						key="staticText-3"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="9" isBold="true" isUnderline="true" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[PAGO TRAMITES IMPUESTOS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="139"
+						y="108"
+						width="168"
+						height="12"
+						key="staticText-4"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="9" isBold="true" isUnderline="false" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[Fondo Seguridad Vial
+Cta # 57002003 1111-8 Banco B.B.V.A]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="309"
+						y="91"
+						width="71"
+						height="12"
+						key="staticText-5"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="9" isBold="true" isUnderline="true" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[Paguese hasta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="309"
+						y="108"
+						width="71"
+						height="12"
+						key="staticText-6"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="9" isBold="true" isUnderline="true" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[Valido hasta]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="390"
+						y="108"
+						width="51"
+						height="12"
+						key="staticText-8"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="9" isBold="false" isUnderline="false" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[31/12/2009]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="134"
+						y="92"
+						width="119"
+						height="15"
+						key="textField-1"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{LF_NUMERO}.toString()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="390"
+						y="91"
+						width="51"
+						height="12"
+						key="textField-16"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font size="9"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{PAGUESE_HASTA}]]></textFieldExpression>
+				</textField>
+				<subreport  isUsingCache="true">
+					<reportElement
+						x="1"
+						y="0"
+						width="242"
+						height="88"
+						key="subreport-5"/>
+					<subreportParameter  name="RUTA_IMG">
+						<subreportParameterExpression><![CDATA[$P{RUTA_IMG}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREP_SECRETARIA}]]></subreportExpression>
+				</subreport>
+				<image  scaleImage="FillFrame" vAlign="Middle" hAlign="Right" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="246"
+						y="8"
+						width="305"
+						height="43"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="barcode-1"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box></box>
+					<graphicElement stretchType="RelativeToTallestObject" fill="Solid" />
+					<imageExpression class="java.awt.Image"><![CDATA[it.businesslogic.ireport.barcode.BcImage.getBarcodeImage(5,$P{PREF_CODBAR},false,false,null,0,0)]]></imageExpression>
+				</image>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="246"
+						y="54"
+						width="305"
+						height="12"
+						key="textField-17"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LABL_CODBAR}]]></textFieldExpression>
+				</textField>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="69"  isSplitAllowed="true" >
+				<subreport  isUsingCache="true">
+					<reportElement
+						mode="Transparent"
+						x="4"
+						y="4"
+						width="537"
+						height="64"
+						key="subreport-3"/>
+					<subreportParameter  name="PLACA">
+						<subreportParameterExpression><![CDATA[$F{PLACA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="MARCA">
+						<subreportParameterExpression><![CDATA[$F{MARCA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="CLASE">
+						<subreportParameterExpression><![CDATA[$F{CLASE}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="MODELO">
+						<subreportParameterExpression><![CDATA[$F{MODELO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ID_VEHICULO">
+						<subreportParameterExpression><![CDATA[$F{LF_V_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_TOTAL">
+						<subreportParameterExpression><![CDATA[$F{LF_TOTAL}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_FECHA">
+						<subreportParameterExpression><![CDATA[$F{LF_FECHA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_ID">
+						<subreportParameterExpression><![CDATA[$F{LF_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREP_PROPIETARIO}]]></subreportExpression>
+				</subreport>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="4"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="32"  isSplitAllowed="true" >
+				<subreport  isUsingCache="true">
+					<reportElement
+						mode="Opaque"
+						x="3"
+						y="0"
+						width="538"
+						height="31"
+						key="subreport-1"
+						stretchType="RelativeToBandHeight"
+						isPrintInFirstWholeBand="true"
+						isPrintWhenDetailOverflows="true"/>
+					<subreportParameter  name="LF_ID">
+						<subreportParameterExpression><![CDATA[$F{LF_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREP_DETALLE}]]></subreportExpression>
+				</subreport>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="8"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="7"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="267"  isSplitAllowed="true" >
+				<rectangle radius="3" >
+					<reportElement
+						x="5"
+						y="22"
+						width="431"
+						height="44"
+						key="rectangle-4"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="5"
+						y="3"
+						width="431"
+						height="17"
+						key="staticText-28"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[RESUMEN DE CUENTA]]></text>
+				</staticText>
+				<rectangle radius="10" >
+					<reportElement
+						x="437"
+						y="3"
+						width="103"
+						height="63"
+						key="rectangle-5"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="436"
+						y="68"
+						width="103"
+						height="11"
+						key="staticText-29"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Espacio para el Banco]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="7"
+						y="26"
+						width="83"
+						height="14"
+						key="staticText-30"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[VALOR LIQUIDACION]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="93"
+						y="26"
+						width="62"
+						height="14"
+						key="staticText-33"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[OTROS VALORES]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="158"
+						y="26"
+						width="82"
+						height="14"
+						key="staticText-34"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[VALOR TOTAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="244"
+						y="49"
+						width="57"
+						height="14"
+						key="staticText-36"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[$ 0,00]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="244"
+						y="26"
+						width="57"
+						height="14"
+						key="staticText-37"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[SALDO ACTUAL]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="304"
+						y="26"
+						width="38"
+						height="14"
+						key="staticText-38"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[CUOTA(S)]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="304"
+						y="49"
+						width="38"
+						height="14"
+						key="staticText-39"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[1 de 1]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="346"
+						y="26"
+						width="86"
+						height="14"
+						key="staticText-41"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="7" isBold="true"/>
+					</textElement>
+				<text><![CDATA[VALOR A PAGAR]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="9"
+						y="79"
+						width="131"
+						height="29"
+						key="staticText-43"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font size="8" isBold="true" isUnderline="true" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[PAGO TRAMITES IMPUESTOS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="143"
+						y="79"
+						width="168"
+						height="29"
+						key="staticText-44"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="8" isBold="true" isUnderline="false" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[Fondo Seguridad Vial
+Cta # 57002003 1111-8 Banco B.B.V.A]]></text>
+				</staticText>
+				<line direction="TopDown">
+					<reportElement
+						x="5"
+						y="45"
+						width="431"
+						height="0"
+						key="line-6"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="91"
+						y="22"
+						width="0"
+						height="44"
+						key="line-7"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="156"
+						y="22"
+						width="0"
+						height="44"
+						key="line-8"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="242"
+						y="22"
+						width="0"
+						height="44"
+						key="line-9"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="302"
+						y="22"
+						width="0"
+						height="44"
+						key="line-10"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<line direction="TopDown">
+					<reportElement
+						x="344"
+						y="22"
+						width="0"
+						height="44"
+						key="line-11"/>
+					<graphicElement stretchType="NoStretch"/>
+				</line>
+				<rectangle radius="10" >
+					<reportElement
+						x="407"
+						y="182"
+						width="134"
+						height="71"
+						key="rectangle-6"/>
+					<graphicElement stretchType="NoStretch"/>
+				</rectangle>
+				<staticText>
+					<reportElement
+						x="407"
+						y="255"
+						width="133"
+						height="11"
+						key="staticText-45"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<text><![CDATA[Espacio para el Banco]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="433"
+						y="94"
+						width="108"
+						height="14"
+						key="textField-6"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{LF_NUMERO}.toString()]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="$ #,##0.00" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="7"
+						y="49"
+						width="83"
+						height="14"
+						key="textField-13"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Double"><![CDATA[$F{LF_TOTAL}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="$ #,##0.00" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="158"
+						y="49"
+						width="82"
+						height="14"
+						key="textField-14"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Double"><![CDATA[$F{LF_TOTAL}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="93"
+						y="49"
+						width="62"
+						height="14"
+						key="staticText-61"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="8" isBold="false"/>
+					</textElement>
+				<text><![CDATA[$ 0,00]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="$ #,##0.00" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="346"
+						y="49"
+						width="86"
+						height="14"
+						key="textField-15"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="8" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Double"><![CDATA[$F{LF_TOTAL}]]></textFieldExpression>
+				</textField>
+				<subreport  isUsingCache="true">
+					<reportElement
+						mode="Transparent"
+						x="9"
+						y="111"
+						width="532"
+						height="64"
+						key="subreport-4"/>
+					<subreportParameter  name="PLACA">
+						<subreportParameterExpression><![CDATA[$F{PLACA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="MARCA">
+						<subreportParameterExpression><![CDATA[$F{MARCA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="CLASE">
+						<subreportParameterExpression><![CDATA[$F{CLASE}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="MODELO">
+						<subreportParameterExpression><![CDATA[$F{MODELO}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="ID_VEHICULO">
+						<subreportParameterExpression><![CDATA[$F{LF_V_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_TOTAL">
+						<subreportParameterExpression><![CDATA[$F{LF_TOTAL}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_FECHA">
+						<subreportParameterExpression><![CDATA[$F{LF_FECHA}]]></subreportParameterExpression>
+					</subreportParameter>
+					<subreportParameter  name="LF_ID">
+						<subreportParameterExpression><![CDATA[$F{LF_ID}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<subreportExpression  class="net.sf.jasperreports.engine.JasperReport"><![CDATA[$P{SUBREP_PROPIETARIO}]]></subreportExpression>
+				</subreport>
+				<elementGroup><!--  Start: 1 !-->
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="9"
+						y="243"
+						width="313"
+						height="12"
+						key="textField-18"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="7"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$P{LABL_CODBAR}]]></textFieldExpression>
+				</textField>
+				</elementGroup><!-- End 1 !-->
+				<image  scaleImage="FillFrame" vAlign="Middle" hAlign="Center" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="9"
+						y="182"
+						width="313"
+						height="46"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="barcode-2"
+						stretchType="RelativeToTallestObject"
+						positionType="Float"/>
+					<box></box>
+					<graphicElement stretchType="RelativeToTallestObject" fill="Solid" />
+					<imageExpression class="java.awt.Image"><![CDATA[it.businesslogic.ireport.barcode.BcImage.getBarcodeImage(5,$P{PREF_CODBAR},false,false,null,0,0)]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement
+						x="368"
+						y="95"
+						width="60"
+						height="12"
+						key="staticText-62"/>
+					<box>					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Bottom">
+						<font pdfFontName="Helvetica-Bold" size="9" isBold="true"/>
+					</textElement>
+				<text><![CDATA[Recibo Num:]]></text>
+				</staticText>
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="5"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

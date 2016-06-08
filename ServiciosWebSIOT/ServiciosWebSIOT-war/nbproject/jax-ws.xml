@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServiciosArchivosPlanos">
+      <implementation-class>servicios.archivosPlanos.ServiciosArchivosPlanos</implementation-class>
+    </service>
+    <service name="ServiciosRangos">
+      <implementation-class>servicios.rangos.ServiciosRangos</implementation-class>
+    </service>
+    <service name="ServiciosLiquidacionComp">
+      <implementation-class>servicios.comparendos.ServiciosLiquidacionComp</implementation-class>
+    </service>
+    <service name="ServiciosGenerales">
+      <implementation-class>servicios.generales.ServiciosGenerales</implementation-class>
+    </service>
+    <service name="ServiciosViewInfraccionesComparendo">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewInfraccionesComparendo</implementation-class>
+    </service>
+    <service name="ServiciosTarifasComp">
+      <implementation-class>servicios.comparendos.ServiciosTarifasComp</implementation-class>
+    </service>
+    <service name="ServiciosAccesoriasConduccion">
+      <implementation-class>servicios.accesorias.ServiciosAccesoriasConduccion</implementation-class>
+    </service>
+    <service name="ServiciosLimitacionPropVehiculo">
+      <implementation-class>servicios.generales.ServiciosLimitacionPropVehiculo</implementation-class>
+    </service>
+    <service name="ServiciosReciboscomparendo">
+      <implementation-class>servicios.comparendos.ServiciosReciboscomparendo</implementation-class>
+    </service>
+    <service name="ServiciosLPagoImpuesto">
+      <implementation-class>servicios.generales.ServiciosLPagoImpuesto</implementation-class>
+    </service>
+    <service name="ServiciosLiquidadorComparendos">
+      <implementation-class>servicios.comparendos.ServiciosLiquidadorComparendos</implementation-class>
+    </service>
+    <service name="ServiciosViewPropVehiculoComparendo">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewPropVehiculoComparendo</implementation-class>
+    </service>
+    <service name="ServiciosAuditoria">
+      <implementation-class>servicios.auditoria.ServiciosAuditoria</implementation-class>
+    </service>
+    <service name="ServiciosViewcompingresados">
+      <implementation-class>servicios.generales.ServiciosViewcompingresados</implementation-class>
+    </service>
+    <service name="ServiciosAccesorias">
+      <implementation-class>servicios.accesorias.ServiciosAccesorias</implementation-class>
+    </service>
+    <service name="ServiciosAccesoriasComp">
+      <implementation-class>servicios.comparendos.ServiciosAccesoriasComp</implementation-class>
+    </service>
+    <service name="ServiciosViewPagosFaltantesCarga">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewPagosFaltantesCarga</implementation-class>
+    </service>
+    <service name="ServiciosRuntsucursalempresa">
+      <implementation-class>servicios.generales.ServiciosRuntsucursalempresa</implementation-class>
+    </service>
+    <service name="ServiciosReportes">
+      <implementation-class>servicios.reportes.ServiciosReportes</implementation-class>
+    </service>
+    <service name="ServiciosResolucionesComp">
+      <implementation-class>servicios.Resoluciones.ServiciosResolucionesComp</implementation-class>
+    </service>
+    <service name="ServiciosViewVehiculo">
+      <implementation-class>servicios.generales.ServiciosViewVehiculo</implementation-class>
+    </service>
+    <service name="ServiciosPlanoComparendo">
+      <implementation-class>servicios.comparendos.planos.ServiciosPlanoComparendo</implementation-class>
+    </service>
+    <service name="ServiciosViewInfractorComparendo">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewInfractorComparendo</implementation-class>
+    </service>
+    <service name="ServiciosRadicacion">
+      <implementation-class>servicios.radicacion.ServiciosRadicacion</implementation-class>
+    </service>
+    <service name="ServiciosEmpresas">
+      <implementation-class>servicios.generales.ServiciosEmpresas</implementation-class>
+    </service>
+    <service name="ServiciosViewtramitesvehiculoporfecha">
+      <implementation-class>servicios.generales.ServiciosViewtramitesvehiculoporfecha</implementation-class>
+    </service>
+    <service name="ServiciosGeneralesComp">
+      <implementation-class>servicios.comparendos.ServiciosGeneralesComp</implementation-class>
+    </service>
+    <service name="ServiciosVehiculos">
+      <implementation-class>servicios.generales.ServiciosVehiculos</implementation-class>
+    </service>
+    <service name="ServiciosMedidasCautelares">
+      <implementation-class>servicios.generales.ServiciosMedidasCautelares</implementation-class>
+    </service>
+    <service name="ServiciosDocumentos">
+      <implementation-class>servicios.documentos.ServiciosDocumentos</implementation-class>
+    </service>
+    <service name="ServiciosViewGenerales">
+      <implementation-class>servicios.generales.ServiciosViewGenerales</implementation-class>
+    </service>
+    <service name="ServiciosViewResolucionAnterior">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewResolucionAnterior</implementation-class>
+    </service>
+    <service name="ServiciosHistoriaDeVehiculo">
+      <implementation-class>servicios.generales.ServiciosHistoriaDeVehiculo</implementation-class>
+    </service>
+    <service name="ServiciosViewPropietario">
+      <implementation-class>servicios.generales.ServiciosViewPropietario</implementation-class>
+    </service>
+    <service name="ServiciosPlanoRecaudos">
+      <implementation-class>servicios.comparendos.planos.ServiciosPlanoRecaudos</implementation-class>
+    </service>
+    <service name="ServiciosCoactivo">
+      <implementation-class>servicios.comparendos.ServiciosCoactivo</implementation-class>
+    </service>
+    <service name="ServiciosViewResoluciones">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewResoluciones</implementation-class>
+    </service>
+    <service name="ServiciosSucursales">
+      <implementation-class>servicios.generales.ServiciosSucursales</implementation-class>
+    </service>
+    <service name="ServiciosViewComparendosFechas">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewComparendosFechas</implementation-class>
+    </service>
+    <service name="ServiciosPersonas">
+      <implementation-class>servicios.generales.ServiciosPersonas</implementation-class>
+    </service>
+    <service name="ServiciosViewCompPorRangoAprobados">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewCompPorRangoAprobados</implementation-class>
+    </service>
+    <service name="ServiciosViewPropietarioEmpresa2">
+      <implementation-class>servicios.generales.ServiciosViewPropietarioEmpresa2</implementation-class>
+    </service>
+    <service name="ServiciosRepresentantesLegales">
+      <implementation-class>servicios.generales.ServiciosRepresentantesLegales</implementation-class>
+    </service>
+    <service name="ServiciosRangosDeComparendos">
+      <implementation-class>servicios.comparendos.ServiciosRangosDeComparendos</implementation-class>
+    </service>
+    <service name="ServiciosPropietarios">
+      <implementation-class>servicios.generales.ServiciosPropietarios</implementation-class>
+    </service>
+    <service name="ServiciosViewPagosSimit">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewPagosSimit</implementation-class>
+    </service>
+    <service name="ServiciosViewResolucionesAlcoholemia">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewResolucionesAlcoholemia</implementation-class>
+    </service>
+    <service name="ServiciosLicenciaDeTransito">
+      <implementation-class>servicios.generales.ServiciosLicenciaDeTransito</implementation-class>
+    </service>
+    <service name="ServiciosMigraciontmp">
+      <implementation-class>servicios.Migraciontmp.ServiciosMigraciontmp</implementation-class>
+    </service>
+    <service name="ServiciosLiquidador">
+      <implementation-class>servicios.liquidador.ServiciosLiquidador</implementation-class>
+    </service>
+    <service name="ServiciosAccesoriasComp_old">
+      <implementation-class>servicios.comparendos.ServiciosAccesoriasComp_old</implementation-class>
+    </service>
+    <service name="ServicioConsultaCiatran">
+      <implementation-class>servicios.comparendos.ServicioConsultaCiatran</implementation-class>
+    </service>
+    <service name="ServiciosTarifas">
+      <implementation-class>servicios.liquidacion.ServiciosTarifas</implementation-class>
+    </service>
+    <service name="ServiciosCitasComp">
+      <implementation-class>servicios.comparendos.ServiciosCitasComp</implementation-class>
+    </service>
+    <service name="ServiciosLiquidacion">
+      <implementation-class>servicios.liquidacion.ServiciosLiquidacion</implementation-class>
+    </service>
+    <service name="ServiciosTramitesRNA">
+      <implementation-class>servicios.tramites.ServiciosTramitesRNA</implementation-class>
+    </service>
+    <service name="ServiciosLicenciasConduccion">
+      <implementation-class>servicios.licenciasConduccion.ServiciosLicenciasConduccion</implementation-class>
+    </service>
+    <service name="ServiciosTramitesTrans">
+      <implementation-class>servicios.transportepublico.ServiciosTramitesTrans</implementation-class>
+    </service>
+    <service name="ServiciosCuposTrans">
+      <implementation-class>servicios.transportepublico.ServiciosCuposTrans</implementation-class>
+    </service>
+    <service name="ServiciosTramitesGenerales">
+      <implementation-class>servicios.tramites.ServiciosTramitesGenerales</implementation-class>
+    </service>
+    <service name="ServiciosTransito">
+      <implementation-class>servicios.generales.ServiciosTransito</implementation-class>
+    </service>
+    <service name="ServiciosCentroConduccion">
+      <implementation-class>servicios.centroConduccion.ServiciosCentroConduccion</implementation-class>
+    </service>
+    <service name="ServiciosErroresSW">
+      <implementation-class>servicios.logs.ServiciosErroresSW</implementation-class>
+    </service>
+    <service name="ServiciosViewResSinAlcoholemia">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewResSinAlcoholemia</implementation-class>
+    </service>
+    <service name="ServiciosComparendosCargaSimit">
+      <implementation-class>servicios.comparendos.planos.ServiciosComparendosCargaSimit</implementation-class>
+    </service>
+    <service name="GenCorBarFac">
+      <implementation-class>servicios.facturacion.GenCorBarFac</implementation-class>
+    </service>
+    <service name="ServiciosFechas">
+      <implementation-class>servicios.generales.ServiciosFechas</implementation-class>
+    </service>
+    <service name="ServiciosAccidentalidad">
+      <implementation-class>servicios.accidentalidad.ServiciosAccidentalidad</implementation-class>
+    </service>
+    <service name="ServiciosViewCompFaltantesCarga">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewCompFaltantesCarga</implementation-class>
+    </service>
+    <service name="ServiciosLogs">
+      <implementation-class>servicios.logs.ServiciosLogs</implementation-class>
+    </service>
+    <service name="ServiciosPlanosSimit">
+      <implementation-class>servicios.comparendos.ServiciosPlanosSimit</implementation-class>
+    </service>
+    <service name="ServiciosPlanoResoluciones">
+      <implementation-class>servicios.comparendos.planos.ServiciosPlanoResoluciones</implementation-class>
+    </service>
+    <service name="ServiciosUsuarios">
+      <implementation-class>servicios.usuarios.ServiciosUsuarios</implementation-class>
+    </service>
+    <service name="ServiciosViewResFaltantesCarga">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewResFaltantesCarga</implementation-class>
+    </service>
+    <service name="ServiciosComparendos">
+      <implementation-class>servicios.comparendos.ServiciosComparendos</implementation-class>
+    </service>
+    <service name="ServiciosViewVehiculoComparendo">
+      <implementation-class>servicios.comparendos.planos.ServiciosViewVehiculoComparendo</implementation-class>
+    </service>
+    <service name="ServiciosConfiguraciones">
+      <implementation-class>servicios.generales.ServiciosConfiguraciones</implementation-class>
+    </service>
+    <service name="ServiciosAvaluos">
+      <implementation-class>servicios.generales.ServiciosAvaluos</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

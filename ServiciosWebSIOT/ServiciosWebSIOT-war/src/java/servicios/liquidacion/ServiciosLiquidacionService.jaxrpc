@@ -1,0 +1,490 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebService xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webservice">
+   <list n="CHILD_NODES">
+      <url path="ServiciosLiquidacion.java"/>
+      <url path="ServiciosLiquidacionPortType.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MTOM"/>
+      <list n="BD_">
+         <hash>
+            <value n="BOUND_PORT_TYPE" v="{USE_OWNER_TNS}ServiciosLiquidacion"/>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+            <value n="NAME" v="{USE_OWNER_TNS}ServiciosLiquidacion"/>
+            <list n="OP_BINDINGS">
+               <hash>
+                  <value n="BOUND_OPERATION" v="int.crearArqueo.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTotalesporCuentaTarifas.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTCuentasContables"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="modelo.datos.objetos.liquidacion.caja.ArqueoCaja.preCrearArqueo.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.eliminarCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTotalesporCuenta.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.crearApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.editarCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.crearDetArqueo.modelo.datos.objetos.liquidacion.caja.DetArqueo.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.arquearApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getSCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp.getCuentaContableId.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getConceptosTarifa.modelo.datos.objetos.liquidacion.ConceptosTarifa.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.createPago.modelo.datos.objetos.liquidacion.Factura.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getViewFacturaDateRange.modelo.datos.objetos.liquidacion.Viewfactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="modelo.datos.objetos.liquidacion.caja.ArqueoCaja.preCrearArqueoRunt.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="modelo.datos.objetos.liquidacion.caja.AperturaTurno.buscarAperturaTurno.modelo.datos.objetos.liquidacion.caja.AperturaTurno"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.editarPagoRunt.modelo.datos.objetos.liquidacion.caja.LPagosRunt.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTotalesporConcepto.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="void.crearObjetos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.buscarArqueos.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.eliminarCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.buscarPagoRunt.modelo.datos.objetos.liquidacion.caja.LPagosRunt"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.anularPago.modelo.datos.objetos.liquidacion.Factura.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.buscarApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.buscarArqueosSinCierreRunt"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTotalesCuenta.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ListaTotalesCuentas.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ViewDetallesPagos.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ViewDetallesPagosConceptos.modelo.datos.objetos.liquidacion.caja.ViewAsobancaria"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.buscarPago.modelo.datos.objetos.liquidacion.caja.LPagos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="int.cerrarCaja.modelo.datos.objetos.liquidacion.caja.CierreCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.lang.String.crearReporteArqueo.java.lang.String.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.liquidacion.caja.AperturaTurno.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.DetArqueo>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.Factura>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.LPagos>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.DetArqueoRunt>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.LPagosRunt>.modelo.datos.objetos.generales.Transito"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="void.facturar.java.util.List.java.util.List.modelo.datos.objetos.liquidacion.DatosAdicionalesFactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getTarifas.modelo.datos.objetos.liquidacion.Tarifa"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getViewFactura.modelo.datos.objetos.liquidacion.Viewfactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.editarPago.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="int.crearArqueoRunt.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.editarPagoIdArqueo.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.crearCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.crearCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.editarApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.lang.String.crearReporteCierreCaja.java.lang.String.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.liquidacion.caja.CierreCaja.modelo.datos.objetos.generales.Transito.java.util.ArrayList&lt;modelo.logica.liquidacion.ResumenCierreCaja>"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.listarViewFactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="java.util.List.getAsobancaria.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="BOUND_OPERATION" v="boolean.crearDetArqueoRunt.modelo.datos.objetos.liquidacion.caja.DetArqueoRunt.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+         </hash>
+      </list>
+      <list n="GENERATED_FILES"/>
+      <value n="GENERATION_OPTION" v="ANNOTATIONS_SEI"/>
+      <value n="GUID" v="34f0188a-0147-1000-802b-c0a858a3990f"/>
+      <value n="LAST_GENERATION_BOTTOM_UP" v="true"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaWebService"/>
+      <list n="PO_">
+         <hash>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+            <value n="NAME" v="ServiciosLiquidacionPort"/>
+            <value n="PORT_BINDING_NAME" v="{USE_OWNER_TNS}ServiciosLiquidacion"/>
+            <list n="PORT_OPS">
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="int.crearArqueo.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTotalesporCuentaTarifas.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTCuentasContables"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="modelo.datos.objetos.liquidacion.caja.ArqueoCaja.preCrearArqueo.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.eliminarCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTotalesporCuenta.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.crearApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.editarCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.crearDetArqueo.modelo.datos.objetos.liquidacion.caja.DetArqueo.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.arquearApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getSCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp.getCuentaContableId.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getConceptosTarifa.modelo.datos.objetos.liquidacion.ConceptosTarifa.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.createPago.modelo.datos.objetos.liquidacion.Factura.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getViewFacturaDateRange.modelo.datos.objetos.liquidacion.Viewfactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="modelo.datos.objetos.liquidacion.caja.ArqueoCaja.preCrearArqueoRunt.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="modelo.datos.objetos.liquidacion.caja.AperturaTurno.BuscarAperturaTurno.modelo.datos.objetos.liquidacion.caja.AperturaTurno"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.editarPagoRunt.modelo.datos.objetos.liquidacion.caja.LPagosRunt.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTotalesporConcepto.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.crearObjetos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.buscarArqueos.modelo.datos.objetos.liquidacion.caja.ArqueoCaja"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.eliminarCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.buscarPagoRunt.modelo.datos.objetos.liquidacion.caja.LPagosRunt"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.anularPago.modelo.datos.objetos.liquidacion.Factura.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.BuscarApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.buscarArqueosSinCierreRunt"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTotalesCuenta.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ListaTotalesCuentas.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ViewDetallesPagos.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.ViewDetallesPagosConceptos.modelo.datos.objetos.liquidacion.caja.ViewAsobancaria"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.buscarPago.modelo.datos.objetos.liquidacion.caja.LPagos"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="int.cerrarCaja.modelo.datos.objetos.liquidacion.caja.CierreCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.crearReporteArqueo.java.lang.String.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.liquidacion.caja.AperturaTurno.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.DetArqueo>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.Factura>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.LPagos>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.DetArqueoRunt>.java.util.ArrayList&lt;modelo.datos.objetos.liquidacion.caja.LPagosRunt>.modelo.datos.objetos.generales.Transito"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="void.facturar.java.util.List.java.util.List.modelo.datos.objetos.liquidacion.DatosAdicionalesFactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getTarifas.modelo.datos.objetos.liquidacion.Tarifa"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getViewFactura.modelo.datos.objetos.liquidacion.Viewfactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.editarPago.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="int.crearArqueoRunt.modelo.datos.objetos.liquidacion.caja.ArqueoCaja.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.editarPagoIdArqueo.modelo.datos.objetos.liquidacion.caja.LPagos.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.CrearCuentaContable.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentasContablesComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.CrearCuentaConcepto.modelo.datos.objetos.comparendos.liquidacion.cuentasContables.CuentaConceptosComp"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.editarApertura.modelo.datos.objetos.liquidacion.caja.AperturaTurno.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.lang.String.crearReporteCierreCaja.java.lang.String.modelo.datos.objetos.generales.Usuarios.modelo.datos.objetos.liquidacion.caja.CierreCaja.modelo.datos.objetos.generales.Transito.java.util.ArrayList&lt;modelo.logica.liquidacion.ResumenCierreCaja>"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.listarViewFactura"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="java.util.List.getAsobancaria.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+               <hash>
+                  <value n="EXPOSED_BD_OPERATION" v="boolean.crearDetArqueoRunt.modelo.datos.objetos.liquidacion.caja.DetArqueoRunt.int.java.lang.String.java.lang.String"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </list>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="URL"/>
+         </hash>
+      </list>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="ADD_ANNOTATIONS">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.AnnotationProperties"/>
+         </hash>
+      </hash>
+      <list n="PT_">
+         <hash>
+            <value n="AUTO_SERVICE_INTERFACE" v="servicios.liquidacion.ServiciosLiquidacionPortType"/>
+            <value n="DEFAULT_NAME" v="true"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+            <value n="NAME" v="{USE_OWNER_TNS}ServiciosLiquidacion"/>
+            <hash n="PROPERTY_GROUPS"/>
+            <value n="PT_CLASS" v="servicios.liquidacion.ServiciosLiquidacion"/>
+         </hash>
+      </list>
+      <url n="TARGET_PROJECT" path="../../../Model.jpr"/>
+      <value n="WS_CREATE_ONEWAY_OPERATIONS" v="true"/>
+      <list n="WS_DEPENDENT_VALUE_TYPES"/>
+      <value n="WS_ORIG_GEN_DIRECTION" v="BOTTOM_UP"/>
+      <value n="WS_TARGET_NAMESPACE" v="http://liquidacion.servicios/"/>
+      <value n="WS_TYPE_NAMESPACE" v="http://servicios.liquidacion/types/"/>
+      <value n="WS_URI" v="ServiciosLiquidacionService"/>
+   </hash>
+</jdevws:WebService>

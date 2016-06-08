@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime" version="2.0">
+<endpoint url-pattern="/ServiciosAccidentalidadPort" implementation="servicios.accidentalidad.ServiciosAccidentalidad"
+            name="ServiciosAccidentalidadPort"/>
+  <endpoint url-pattern="/ServiciosLiquidacionPort" implementation="servicios.liquidacion.ServiciosLiquidacion"
+            name="ServiciosLiquidacionPort"/>
+  <endpoint url-pattern="/ServiciosGeneralesPort" implementation="servicios.generales.ServiciosGenerales"
+            name="ServiciosGeneralesPort"/>
+  <endpoint url-pattern="/ServiciosAccesoriasPort" implementation="servicios.accesorias.ServiciosAccesorias"
+            name="ServiciosAccesoriasPort"/>
+  <endpoint url-pattern="/ServiciosTramitesRNAPort" implementation="servicios.tramites.ServiciosTramitesRNA"
+            name="ServiciosTramitesRNAPort"/>
+  <endpoint url-pattern="/ServiciosPersonasPort" implementation="servicios.generales.ServiciosPersonas"
+            name="ServiciosPersonasPort"/>
+  <endpoint url-pattern="/ServiciosEmpresasPort" implementation="servicios.generales.ServiciosEmpresas"
+            name="ServiciosEmpresasPort"/>
+  <endpoint url-pattern="/ServiciosVehiculosPort" implementation="servicios.generales.ServiciosVehiculos"
+            name="ServiciosVehiculosPort"/>
+  <endpoint url-pattern="/ServiciosRepresentantesLegalesPort" implementation="servicios.generales.ServiciosRepresentantesLegales"
+            name="ServiciosRepresentantesLegalesPort"/>
+  <endpoint url-pattern="/ServiciosSucursalesPort" implementation="servicios.generales.ServiciosSucursales"
+            name="ServiciosSucursalesPort"/>
+  <endpoint url-pattern="/ServiciosViewVehiculoPort" implementation="servicios.generales.ServiciosViewVehiculo"
+            name="ServiciosViewVehiculoPort"/>
+  <endpoint url-pattern="/ServiciosMedidasCautelaresPort" implementation="servicios.generales.ServiciosMedidasCautelares"
+            name="ServiciosMedidasCautelaresPort"/>
+  <endpoint url-pattern="/ServiciosRadicacionPort" implementation="servicios.radicacion.ServiciosRadicacion"
+            name="ServiciosRadicacionPort"/>
+  <endpoint url-pattern="/ServiciosViewPropietarioPort" implementation="servicios.generales.ServiciosViewPropietario"
+            name="ServiciosViewPropietarioPort"/>
+  <endpoint url-pattern="/ServiciosViewGeneralesPort" implementation="servicios.generales.ServiciosViewGenerales"
+            name="ServiciosViewGeneralesPort"/>
+  <endpoint url-pattern="/ServiciosRangosPort" implementation="servicios.rangos.ServiciosRangos"
+            name="ServiciosRangosPort"/>
+  <endpoint url-pattern="/ServiciosUsuariosPort" implementation="servicios.usuarios.ServiciosUsuarios"
+            name="ServiciosUsuariosPort"/>
+  <endpoint url-pattern="/ServiciosComparendosPort" implementation="servicios.comparendos.ServiciosComparendos"
+            name="ServiciosComparendosPort"/>
+  <endpoint url-pattern="/ServiciosPropietariosPort" implementation="servicios.generales.ServiciosPropietarios"
+            name="ServiciosPropietariosPort"/>
+  <endpoint url-pattern="/ServiciosTransitoPort" implementation="servicios.generales.ServiciosTransito"
+            name="ServiciosTransitoPort"/>
+  <endpoint url-pattern="/ServiciosTarifasPort" implementation="servicios.liquidacion.ServiciosTarifas"
+            name="ServiciosTarifasPort"/>
+  <endpoint url-pattern="/ServiciosTramitesGeneralesPort" implementation="servicios.tramites.ServiciosTramitesGenerales"
+            name="ServiciosTramitesGeneralesPort"/>
+  <endpoint url-pattern="/ServiciosLiquidacionCompPort" implementation="servicios.comparendos.ServiciosLiquidacionComp"
+            name="ServiciosLiquidacionCompPort"/>
+  <endpoint url-pattern="/ServiciosCuposTransPort" implementation="servicios.transportepublico.ServiciosCuposTrans"
+            name="ServiciosCuposTransPort"/>
+  <endpoint url-pattern="/ServiciosLPagoImpuestoPort" implementation="servicios.generales.ServiciosLPagoImpuesto"
+            name="ServiciosLPagoImpuestoPort"/>
+  <endpoint url-pattern="/ServiciosAccesoriasCompPort" implementation="servicios.comparendos.ServiciosAccesoriasComp"
+            name="ServiciosAccesoriasCompPort"/>
+  <endpoint url-pattern="/ServiciosGeneralesCompPort" implementation="servicios.comparendos.ServiciosGeneralesComp"
+            name="ServiciosGeneralesCompPort"/>
+  <endpoint url-pattern="/ServiciosDocumentosPort" implementation="servicios.documentos.ServiciosDocumentos"
+            name="ServiciosDocumentosPort"/>
+  <endpoint url-pattern="/ServiciosAvaluosPort" implementation="servicios.generales.ServiciosAvaluos"
+            name="ServiciosAvaluosPort"/>
+  <endpoint url-pattern="/ServiciosTramitesTransPort" implementation="servicios.transportepublico.ServiciosTramitesTrans"
+            name="ServiciosTramitesTransPort"/>
+  <endpoint url-pattern="/ServiciosTarifasCompPort" implementation="servicios.comparendos.ServiciosTarifasComp"
+            name="ServiciosTarifasCompPort"/>
+  <endpoint url-pattern="/ServiciosArchivosPlanosPort" implementation="servicios.archivosPlanos.ServiciosArchivosPlanos"
+            name="ServiciosArchivosPlanosPort"/>
+  <endpoint url-pattern="/ServiciosLiquidadorPort" implementation="servicios.liquidador.ServiciosLiquidador"
+            name="ServiciosLiquidadorPort"/>
+  <endpoint url-pattern="/ServiciosLiquidadorComparendosPort" implementation="servicios.comparendos.ServiciosLiquidadorComparendos"
+            name="ServiciosLiquidadorComparendosPort"/>
+  <endpoint url-pattern="/ServiciosLimitacionPropVehiculoPort" implementation="servicios.generales.ServiciosLimitacionPropVehiculo"
+            name="ServiciosLimitacionPropVehiculoPort"/>
+  <endpoint url-pattern="/ServiciosRangosDeComparendosPort" implementation="servicios.comparendos.ServiciosRangosDeComparendos"
+            name="ServiciosRangosDeComparendosPort"/>
+  <endpoint url-pattern="/ServiciosViewPropietarioEmpresa2Port" implementation="servicios.generales.ServiciosViewPropietarioEmpresa2"
+            name="ServiciosViewPropietarioEmpresa2Port"/>
+  <endpoint url-pattern="/ServiciosAccesoriasConduccionPort" implementation="servicios.accesorias.ServiciosAccesoriasConduccion"
+            name="ServiciosAccesoriasConduccionPort"/>
+  <endpoint url-pattern="/ServiciosAuditoriaPort" implementation="servicios.auditoria.ServiciosAuditoria"
+            name="ServiciosAuditoriaPort"/>
+  <endpoint url-pattern="/ServiciosPlanosSimitPort" implementation="servicios.comparendos.ServiciosPlanosSimit"
+            name="ServiciosPlanosSimitPort"/>
+  <endpoint url-pattern="/ServiciosComparendosCargaSimitPort" implementation="servicios.comparendos.planos.ServiciosComparendosCargaSimit"
+            name="ServiciosComparendosCargaSimitPort"/>
+  <endpoint url-pattern="/ServiciosPlanoComparendoPort" implementation="servicios.comparendos.planos.ServiciosPlanoComparendo"
+            name="ServiciosPlanoComparendoPort"/>
+  <endpoint url-pattern="/ServiciosPlanoRecaudosPort" implementation="servicios.comparendos.planos.ServiciosPlanoRecaudos"
+            name="ServiciosPlanoRecaudosPort"/>
+  <endpoint url-pattern="/ServiciosPlanoResolucionesPort" implementation="servicios.comparendos.planos.ServiciosPlanoResoluciones"
+            name="ServiciosPlanoResolucionesPort"/>
+  <endpoint url-pattern="/ServiciosViewComparendosFechasPort" implementation="servicios.comparendos.planos.ServiciosViewComparendosFechas"
+            name="ServiciosViewComparendosFechasPort"/>
+  <endpoint url-pattern="/ServiciosViewCompFaltantesCargaPort" implementation="servicios.comparendos.planos.ServiciosViewCompFaltantesCarga"
+            name="ServiciosViewCompFaltantesCargaPort"/>
+  <endpoint url-pattern="/ServiciosViewInfraccionesComparendoPort" implementation="servicios.comparendos.planos.ServiciosViewInfraccionesComparendo"
+            name="ServiciosViewInfraccionesComparendoPort"/>
+  <endpoint url-pattern="/ServiciosViewInfractorComparendoPort" implementation="servicios.comparendos.planos.ServiciosViewInfractorComparendo"
+            name="ServiciosViewInfractorComparendoPort"/>
+  <endpoint url-pattern="/ServiciosViewPropVehiculoComparendoPort" implementation="servicios.comparendos.planos.ServiciosViewPropVehiculoComparendo"
+            name="ServiciosViewPropVehiculoComparendoPort"/>
+  <endpoint url-pattern="/ServiciosViewResFaltantesCargaPort" implementation="servicios.comparendos.planos.ServiciosViewResFaltantesCarga"
+            name="ServiciosViewResFaltantesCargaPort"/>
+  <endpoint url-pattern="/ServiciosViewResolucionesPort" implementation="servicios.comparendos.planos.ServiciosViewResoluciones"
+            name="ServiciosViewResolucionesPort"/>
+  <!--<endpoint url-pattern="/ServiciosResolucionesPort" implementation="servicios.resoluciones.ServiciosResoluciones"
+            name="ServiciosViewResolucionesPort"/>-->
+  <endpoint url-pattern="/ServiciosViewResolucionesAlcoholemiaPort" implementation="servicios.comparendos.planos.ServiciosViewResolucionesAlcoholemia"
+            name="ServiciosViewResolucionesAlcoholemiaPort"/>
+  <endpoint url-pattern="/ServiciosViewResSinAlcoholemiaPort" implementation="servicios.comparendos.planos.ServiciosViewResSinAlcoholemia"
+            name="ServiciosViewResSinAlcoholemiaPort"/>
+  <endpoint url-pattern="/ServiciosViewVehiculoComparendoPort" implementation="servicios.comparendos.planos.ServiciosViewVehiculoComparendo"
+            name="ServiciosViewVehiculoComparendoPort"/>
+  <endpoint url-pattern="/ServiciosViewCompPorRangoAprobadosPort" implementation="servicios.comparendos.planos.ServiciosViewCompPorRangoAprobados"
+            name="ServiciosViewCompPorRangoAprobadosPort"/>
+  <endpoint url-pattern="/ServiciosViewResolucionAnteriorPort" implementation="servicios.comparendos.planos.ServiciosViewResolucionAnterior"
+            name="ServiciosViewResolucionAnteriorPort"/>
+  <endpoint url-pattern="/ServicioConsultaCiatranPort" implementation="servicios.comparendos.ServicioConsultaCiatran"
+            name="ServicioConsultaCiatranPort"/>
+  <endpoint url-pattern="/ServiciosLicenciasConduccionPort" implementation="servicios.licenciasConduccion.ServiciosLicenciasConduccion"
+            name="ServiciosLicenciasConduccionPort"/>
+  <endpoint url-pattern="/ServiciosConfiguracionesPort" implementation="servicios.generales.ServiciosConfiguraciones"
+            name="ServiciosConfiguracionesPort"/>
+  <endpoint url-pattern="/ServiciosReciboscomparendoPort" implementation="servicios.comparendos.ServiciosReciboscomparendo"
+            name="ServiciosReciboscomparendoPort"/>
+  <endpoint url-pattern="/GenCorBarFacPort" implementation="servicios.facturacion.GenCorBarFac"
+            name="GenCorBarFacPort"/>
+  <endpoint url-pattern="/ServiciosHistoriaDeVehiculoPort" implementation="servicios.generales.ServiciosHistoriaDeVehiculo"
+            name="ServiciosHistoriaDeVehiculoPort"/>
+  <endpoint url-pattern="/ServiciosLicenciaDeTransitoPort" implementation="servicios.generales.ServiciosLicenciaDeTransito"
+            name="ServiciosLicenciaDeTransitoPort"/>
+  <endpoint url-pattern="/ServiciosViewPagosFaltantesCargaPort" implementation="servicios.comparendos.planos.ServiciosViewPagosFaltantesCarga"
+            name="ServiciosViewPagosFaltantesCargaPort"/>
+  <endpoint url-pattern="/ServiciosCitasCompPort" implementation="servicios.comparendos.ServiciosCitasComp"
+            name="ServiciosCitasCompPort"/>
+  <endpoint url-pattern="/ServiciosCentroConduccionPort" implementation="servicios.centroConduccion.ServiciosCentroConduccion"
+            name="ServiciosCentroConduccionPort"/>
+  <endpoint url-pattern="/ServiciosReportesPort" implementation="servicios.reportes.ServiciosReportes"
+            name="ServiciosReportesPort"/>
+  <endpoint url-pattern="/ServiciosViewtramitesvehiculoporfechaPort" implementation="servicios.generales.ServiciosViewtramitesvehiculoporfecha"
+            name="ServiciosViewtramitesvehiculoporfechaPort"/>
+  <endpoint url-pattern="/ServiciosLogsPort" implementation="servicios.logs.ServiciosLogs" name="ServiciosLogsPort"/>
+  <endpoint url-pattern="/ServiciosErroresSWPort" implementation="servicios.logs.ServiciosErroresSW" name="ServiciosErroresSWPort"/> 
+  <endpoint url-pattern="/ServiciosCoactivoPort" implementation="servicios.comparendos.ServiciosCoactivo" name="ServiciosCoactivoPort"/> 
+  <endpoint url-pattern="/ServiciosViewcompingresadosPort" implementation="servicios.generales.ServiciosViewcompingresados" name="ServiciosViewcompingresadosPort"/>
+  <endpoint url-pattern="/ServiciosFechasPort" implementation="servicios.generales.ServiciosFechas" name="ServiciosFechasPort"/>
+
+</endpoints>
