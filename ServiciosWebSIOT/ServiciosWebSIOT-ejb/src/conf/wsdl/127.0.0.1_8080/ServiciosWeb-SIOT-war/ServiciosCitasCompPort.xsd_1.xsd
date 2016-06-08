@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://comparendos.servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://comparendos.servicios/">
+
+<xs:element name="anularCita" type="tns:anularCita"/>
+
+<xs:element name="anularCitaResponse" type="tns:anularCitaResponse"/>
+
+<xs:element name="buscarCita" type="tns:buscarCita"/>
+
+<xs:element name="buscarCitaResponse" type="tns:buscarCitaResponse"/>
+
+<xs:element name="buscarDetCita" type="tns:buscarDetCita"/>
+
+<xs:element name="buscarDetCitaResponse" type="tns:buscarDetCitaResponse"/>
+
+<xs:element name="buscarTramitePorDependencia" type="tns:buscarTramitePorDependencia"/>
+
+<xs:element name="buscarTramitePorDependenciaResponse" type="tns:buscarTramitePorDependenciaResponse"/>
+
+<xs:element name="crearObjetos" type="tns:crearObjetos"/>
+
+<xs:element name="crearObjetosResponse" type="tns:crearObjetosResponse"/>
+
+<xs:element name="eliminarDetCita" type="tns:eliminarDetCita"/>
+
+<xs:element name="eliminarDetCitaResponse" type="tns:eliminarDetCitaResponse"/>
+
+<xs:element name="eliminarTramiteDependencia" type="tns:eliminarTramiteDependencia"/>
+
+<xs:element name="eliminarTramiteDependenciaResponse" type="tns:eliminarTramiteDependenciaResponse"/>
+
+<xs:element name="insertarCita" type="tns:insertarCita"/>
+
+<xs:element name="insertarCitaResponse" type="tns:insertarCitaResponse"/>
+
+<xs:element name="insertarDetCita" type="tns:insertarDetCita"/>
+
+<xs:element name="insertarDetCitaResponse" type="tns:insertarDetCitaResponse"/>
+
+<xs:element name="insertarTramiteDependencia" type="tns:insertarTramiteDependencia"/>
+
+<xs:element name="insertarTramiteDependenciaResponse" type="tns:insertarTramiteDependenciaResponse"/>
+
+<xs:element name="ponerObservacionCita" type="tns:ponerObservacionCita"/>
+
+<xs:element name="ponerObservacionCitaResponse" type="tns:ponerObservacionCitaResponse"/>
+
+<xs:element name="terminarCita" type="tns:terminarCita"/>
+
+<xs:element name="terminarCitaResponse" type="tns:terminarCitaResponse"/>
+
+<xs:complexType name="anularCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cita" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cita">
+<xs:sequence>
+<xs:element name="ESTADO" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHAANULA" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHACITA" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHAREG" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHATERMINA" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHATRASLADA" type="xs:string" minOccurs="0"/>
+<xs:element name="HORAREG" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_CITA" type="xs:int"/>
+<xs:element name="ID_DEPENDENCIA" type="xs:int"/>
+<xs:element name="ID_USRANULA" type="xs:int"/>
+<xs:element name="ID_USRTERMINA" type="xs:int"/>
+<xs:element name="ID_USRTRASLADA" type="xs:int"/>
+<xs:element name="ID_USUARIO" type="xs:int"/>
+<xs:element name="NOMBRESOLICITA" type="xs:string" minOccurs="0"/>
+<xs:element name="NUMEROCITA" type="xs:int"/>
+<xs:element name="OBSERVACION" type="xs:string" minOccurs="0"/>
+<xs:element name="REASIGNADA" type="xs:string" minOccurs="0"/>
+<xs:element name="USRREASIGNA" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="anularCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cita" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarDetCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:detCita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="detCita">
+<xs:sequence>
+<xs:element name="CODTRAMITE" type="xs:string" minOccurs="0"/>
+<xs:element name="DESCTRAMITE" type="xs:string" minOccurs="0"/>
+<xs:element name="ESTADO" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHAASIGNA" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHATERMINA" type="xs:string" minOccurs="0"/>
+<xs:element name="HORAASIGNA" type="xs:string" minOccurs="0"/>
+<xs:element name="HORACITA" type="xs:string" minOccurs="0"/>
+<xs:element name="HORATERMINA" type="xs:string" minOccurs="0"/>
+<xs:element name="IDTRAMITEINTERNO" type="xs:int"/>
+<xs:element name="IDUSRTERMINA" type="xs:int"/>
+<xs:element name="ID_CITA" type="xs:int"/>
+<xs:element name="ID_DETCITA" type="xs:int"/>
+<xs:element name="ID_PERSONA" type="xs:int"/>
+<xs:element name="ID_USRASIGNA" type="xs:int"/>
+<xs:element name="NUMEROCITA" type="xs:int"/>
+<xs:element name="OBSERVACION" type="xs:string" minOccurs="0"/>
+<xs:element name="PLACACEDULA" type="xs:string" minOccurs="0"/>
+<xs:element name="TIPO" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarDetCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:detCita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarTramiteDependencia">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tramiteDependencia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tramiteDependencia">
+<xs:sequence>
+<xs:element name="ID_DEPENDENCIA" type="xs:int"/>
+<xs:element name="ID_TRAMITEDEPEN" type="xs:int"/>
+<xs:element name="ID_TRAMITEINTERNO" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertarTramiteDependenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:tramiteDependencia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarTramitePorDependencia">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tramitesPorDependencia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tramitesPorDependencia">
+<xs:sequence>
+<xs:element name="CODTRAMITE" type="xs:string" minOccurs="0"/>
+<xs:element name="DESCTRAMITE" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_DEPENDENCIA" type="xs:int"/>
+<xs:element name="ID_TRAMITEDEPEN" type="xs:int"/>
+<xs:element name="ID_TRAMITEINTERNO" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarTramitePorDependenciaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarTramiteDependencia">
+<xs:sequence>
+<xs:element name="arg0" type="tns:tramiteDependencia" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarTramiteDependenciaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="terminarCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cita" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+<xs:element name="arg3" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="terminarCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarDetCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:detCita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="eliminarDetCitaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="buscarCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearObjetos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="crearObjetosResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="buscarDetCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:detCita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarDetCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ponerObservacionCita">
+<xs:sequence>
+<xs:element name="arg0" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ponerObservacionCitaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:cita" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

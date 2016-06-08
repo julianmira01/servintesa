@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://generales.servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://generales.servicios/">
+
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="crearImagenes" type="tns:crearImagenes"/>
+
+<xs:element name="crearImagenesResponse" type="tns:crearImagenesResponse"/>
+
+<xs:element name="crearObjetos" type="tns:crearObjetos"/>
+
+<xs:element name="crearPersona" type="tns:crearPersona"/>
+
+<xs:element name="crearPersonaResponse" type="tns:crearPersonaResponse"/>
+
+<xs:element name="editarPersona" type="tns:editarPersona"/>
+
+<xs:element name="editarPersonaResponse" type="tns:editarPersonaResponse"/>
+
+<xs:element name="getDireccion" type="tns:getDireccion"/>
+
+<xs:element name="getDireccionResponse" type="tns:getDireccionResponse"/>
+
+<xs:element name="getLoadAllPersonas" type="tns:getLoadAllPersonas"/>
+
+<xs:element name="getLoadAllPersonasResponse" type="tns:getLoadAllPersonasResponse"/>
+
+<xs:element name="getPersona" type="tns:getPersona"/>
+
+<xs:element name="getPersonaResponse" type="tns:getPersonaResponse"/>
+
+<xs:element name="getPersonas" type="tns:getPersonas"/>
+
+<xs:element name="getPersonasIdentificacion" type="tns:getPersonasIdentificacion"/>
+
+<xs:element name="getPersonasIdentificacionResponse" type="tns:getPersonasIdentificacionResponse"/>
+
+<xs:element name="getPersonasNombres" type="tns:getPersonasNombres"/>
+
+<xs:element name="getPersonasNombresResponse" type="tns:getPersonasNombresResponse"/>
+
+<xs:element name="getPersonasResponse" type="tns:getPersonasResponse"/>
+
+<xs:element name="validarExistenciaPersona" type="tns:validarExistenciaPersona"/>
+
+<xs:element name="validarExistenciaPersonaLlavePrimaria" type="tns:validarExistenciaPersonaLlavePrimaria"/>
+
+<xs:element name="validarExistenciaPersonaLlavePrimariaResponse" type="tns:validarExistenciaPersonaLlavePrimariaResponse"/>
+
+<xs:element name="validarExistenciaPersonaResponse" type="tns:validarExistenciaPersonaResponse"/>
+
+<xs:complexType name="getPersonasNombres">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persona">
+<xs:sequence>
+<xs:element name="APELLIDO1" type="xs:string" minOccurs="0"/>
+<xs:element name="APELLIDO2" type="xs:string" minOccurs="0"/>
+<xs:element name="CATEGORIA" type="xs:int"/>
+<xs:element name="CELULAR" type="xs:string" minOccurs="0"/>
+<xs:element name="CODBIDIMENSIONAL" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="DEDO1" type="xs:string" minOccurs="0"/>
+<xs:element name="DEDO2" type="xs:string" minOccurs="0"/>
+<xs:element name="DIRECCION" type="xs:string" minOccurs="0"/>
+<xs:element name="direcciones" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element name="EMAIL" type="xs:string" minOccurs="0"/>
+<xs:element name="FACTORRH" type="xs:string" minOccurs="0"/>
+<xs:element name="FCH_EXPDOCUMENTO" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHA_NAC" type="xs:string" minOccurs="0"/>
+<xs:element name="FIRMA" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="FOTO" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="HUELLA1" type="xs:string" minOccurs="0"/>
+<xs:element name="HUELLA2" type="xs:string" minOccurs="0"/>
+<xs:element name="IDENTIFICACION" type="xs:string" minOccurs="0"/>
+<xs:element name="IDRUNT" type="xs:int"/>
+<xs:element name="ID_DEPARTAMENTO" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_DOCTO" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_GRUPOSANGUINEORUNT" type="xs:int"/>
+<xs:element name="ID_MUNICIPIO" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_PAIS" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_PERSONAS" type="xs:int"/>
+<xs:element name="ID_SEXO" type="xs:int"/>
+<xs:element name="ID_TRANSITO" type="xs:int"/>
+<xs:element name="NOMBRES" type="xs:string" minOccurs="0"/>
+<xs:element name="NRO_LICENCIA" type="xs:int"/>
+<xs:element name="SGDNOMBRE" type="xs:string" minOccurs="0"/>
+<xs:element name="TELEFONO" type="xs:string" minOccurs="0"/>
+<xs:element name="TIPOSANGRE" type="xs:string" minOccurs="0"/>
+<xs:element name="TOKENHUELLA" type="xs:base64Binary" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonasNombresResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDireccion">
+<xs:sequence>
+<xs:element name="arg0" type="tns:direccion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="direccion">
+<xs:sequence>
+<xs:element name="CELULAR" type="xs:string" minOccurs="0"/>
+<xs:element name="COD_TIPODIRECCION" type="xs:string" minOccurs="0"/>
+<xs:element name="DIRECCION" type="xs:string" minOccurs="0"/>
+<xs:element name="DIRPRINCIPAL" type="xs:string" minOccurs="0"/>
+<xs:element name="EMAIL" type="xs:string" minOccurs="0"/>
+<xs:element name="FAX1" type="xs:string" minOccurs="0"/>
+<xs:element name="FAX2" type="xs:string" minOccurs="0"/>
+<xs:element name="FECHARES" type="xs:string" minOccurs="0"/>
+<xs:element name="IDTIPO" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_CIUDAD" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_DEPARTAMENTO" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_EMPRESA" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_PAIS" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_PERSONA" type="xs:string" minOccurs="0"/>
+<xs:element name="ID_SUCURSAL" type="xs:int"/>
+<xs:element name="NRODIRECCION" type="xs:string" minOccurs="0"/>
+<xs:element name="TELEFONO1" type="xs:string" minOccurs="0"/>
+<xs:element name="TELEFONO2" type="xs:string" minOccurs="0"/>
+<xs:element name="WEB" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDireccionResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:direccion" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLoadAllPersonas">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLoadAllPersonasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersona">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonasIdentificacion">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonasIdentificacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarExistenciaPersona">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarExistenciaPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonas">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPersonasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarPersona">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editarPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarExistenciaPersonaLlavePrimaria">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="validarExistenciaPersonaLlavePrimariaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearObjetos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="crearImagenes">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearImagenesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearPersona">
+<xs:sequence>
+<xs:element name="arg0" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="crearPersonaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:persona" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

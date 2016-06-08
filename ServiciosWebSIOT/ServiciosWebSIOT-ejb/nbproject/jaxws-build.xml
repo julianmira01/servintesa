@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:ejbjarproject2="http://www.netbeans.org/ns/j2ee-ejbjarproject/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <mkdir dir="${classes.dir}"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${j2ee.platform.wsimport.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-ServiciosCitasCompPort" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort"/>
+        <property name="wsdl-ServiciosCitasCompPort" location="${meta.inf}/xml-resources/web-service-references/ServiciosCitasCompPort/wsdl/127.0.0.1_8080/ServiciosWeb-SIOT-war/ServiciosCitasCompPort.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort" destdir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort" wsdl="${wsdl-ServiciosCitasCompPort}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://127.0.0.1:8080/ServiciosWeb-SIOT-war/ServiciosCitasCompPort?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-ServiciosCitasCompPort}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServiciosCitasCompPort" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServiciosCitasCompPort"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios/comparendos"/>
+    </target>
+    <target name="wsimport-client-ServiciosPersonasPort" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort"/>
+        <property name="wsdl-ServiciosPersonasPort" location="${meta.inf}/xml-resources/web-service-references/ServiciosPersonasPort/wsdl/127.0.0.1_8080/ServiciosWeb-SIOT-war/ServiciosPersonasPort.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort" destdir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort" wsdl="${wsdl-ServiciosPersonasPort}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://127.0.0.1:8080/ServiciosWeb-SIOT-war/ServiciosPersonasPort?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-ServiciosPersonasPort}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ServiciosPersonasPort" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ServiciosPersonasPort"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/servicios/generales"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-ServiciosCitasCompPort, wsimport-client-ServiciosPersonasPort"/>
+</project>
